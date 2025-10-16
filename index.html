@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BeautyMart — متجر مستحضرات التجميل</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <!-- Inline SVG logo -->
+        <svg class="logo" width="140" height="48" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" aria-label="BeautyMart logo">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0%" stop-color="#800020"/>
+              <stop offset="100%" stop-color="#5a0016"/>
+            </linearGradient>
+          </defs>
+          <text x="10" y="48" font-family="Poppins, Cairo, sans-serif" font-weight="700" font-size="44" fill="url(#g1)">BeautyMart</text>
+          <text x="10" y="86" font-family="Cairo, sans-serif" font-size="20" fill="#D4AF37">بيوتي مارت</text>
+        </svg>
+      </div>
+
+      <div class="search-wrap">
+        <div class="search-box">
+          <input id="searchInput" type="search" placeholder="ابحثي عن منتجك..." aria-label="بحث المنتجات">
+          <button id="clearBtn" class="clear" title="مسح البحث">&times;</button>
+          <button id="searchBtn" class="search" title="بحث">🔍</button>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#products">المنتجات</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>اكتشفي جمالك الطبيعي مع <span class="accent">BeautyMart</span></h1>
+        <p class="lead">منتجات مختارة بعناية لتعزيز إشراقتك — أضيفي صورك ووصف منتجاتك لاحقًا بسهولة.</p>
+        <a class="cta" href="#products">تسوقي الآن</a>
+      </div>
+      <div class="hero-visual">بانر تصويري — أضيفي صور لاحقًا</div>
+    </section>
+
+    <section id="products" class="products-section">
+      <h2 class="section-title">منتجاتنا</h2>
+      <div id="productsGrid" class="grid">
+        <!-- product cards -->
+        <article class="card" data-name="سيروم فيتامين C">
+          <div class="card-img">أضف صورة المنتج لاحقًا</div>
+          <div class="card-body">
+            <h3 class="card-title">سيروم فيتامين C</h3>
+            <div class="price">250 جنيه</div>
+            <div class="card-actions"><button class="btn ghost">عرض</button><button class="btn primary">أضف</button></div>
+          </div>
+        </article>
+
+        <article class="card" data-name="كريم ترطيب طبيعي">
+          <div class="card-img">أضف صورة المنتج لاحقًا</div>
+          <div class="card-body">
+            <h3 class="card-title">كريم ترطيب طبيعي</h3>
+            <div class="price">230 جنيه</div>
+            <div class="card-actions"><button class="btn ghost">عرض</button><button class="btn primary">أضف</button></div>
+          </div>
+        </article>
+
+        <article class="card" data-name="روج وردي ناعم">
+          <div class="card-img">أضف صورة المنتج لاحقًا</div>
+          <div class="card-body">
+            <h3 class="card-title">روج وردي ناعم</h3>
+            <div class="price">180 جنيه</div>
+            <div class="card-actions"><button class="btn ghost">عرض</button><button class="btn primary">أضف</button></div>
+          </div>
+        </article>
+
+        <article class="card" data-name="عطر فاخر">
+          <div class="card-img">أضف صورة المنتج لاحقًا</div>
+          <div class="card-body">
+            <h3 class="card-title">عطر فاخر</h3>
+            <div class="price">450 جنيه</div>
+            <div class="card-actions"><button class="btn ghost">عرض</button><button class="btn primary">أضف</button></div>
+          </div>
+        </article>
+
+        <article class="card" data-name="ماسك الفحم">
+          <div class="card-img">أضف صورة المنتج لاحقًا</div>
+          <div class="card-body">
+            <h3 class="card-title">ماسك الفحم</h3>
+            <div class="price">120 جنيه</div>
+            <div class="card-actions"><button class="btn ghost">عرض</button><button class="btn primary">أضف</button></div>
+          </div>
+        </article>
+
+        <article class="card" data-name="سيروم بزيت الأرجان">
+          <div class="card-img">أضف صورة المنتج لاحقًا</div>
+          <div class="card-body">
+            <h3 class="card-title">سيروم بزيت الأرجان</h3>
+            <div class="price">310 جنيه</div>
+            <div class="card-actions"><button class="btn ghost">عرض</button><button class="btn primary">أضف</button></div>
+          </div>
+        </article>
+      </div>
+      <div id="noResults" class="no-results" hidden>لم يتم العثور على نتائج</div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">من نحن</h2>
+      <p>BeautyMart متجر إلكتروني لمستحضرات التجميل يقدّم منتجات مختارة بعناية وبطابع فاخر. أضيفي صور المنتجات ووصفها عندك في أي وقت.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">تواصل معنا</h2>
+      <p>البريد: info@beautymart.example</p>
+      <p>الهاتف: 01234567890</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 BeautyMart. جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
